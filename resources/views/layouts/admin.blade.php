@@ -62,14 +62,14 @@
                         Categories
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="{{ route('admin.brands.index') }}" class="flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-slate-700 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-200 {{ request()->routeIs('admin.brands.*') ? 'bg-blue-50 text-blue-600' : '' }}">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
                         </svg>
                         Brands
                     </a>
-                </li>
+                </li> -->
                 <li>
                     <a href="{{ route('admin.products.index') }}" class="flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-slate-700 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-200 {{ request()->routeIs('admin.products.*') ? 'bg-blue-50 text-blue-600' : '' }}">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -78,14 +78,14 @@
                         Products
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="{{ route('admin.articles.index') }}" class="flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-slate-700 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-200 {{ request()->routeIs('admin.articles.*') ? 'bg-blue-50 text-blue-600' : '' }}">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
                         </svg>
                         Articles
                     </a>
-                </li>
+                </li> -->
                 <li>
                     <a href="{{ route('admin.galleries.index') }}" class="flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-slate-700 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all duration-200 {{ request()->routeIs('admin.galleries.*') ? 'bg-blue-50 text-blue-600' : '' }}">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

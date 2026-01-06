@@ -11,28 +11,28 @@
     <div class="max-w-7xl mx-auto flex items-center justify-between">
         {{-- Logo --}}
         <a href="{{ route('home') }}" class="group flex items-center gap-2 md:gap-3 relative z-[110]">
-    <div class="w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl md:rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+    <div class="w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-xl md:rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
         <svg class="w-5 h-5 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.5c-1.5 0-2.5 1-2.5 2.5s1 2.5 2.5 2.5 2.5-1 2.5-2.5-1-2.5-2.5-2.5zm0 0V4m0 11.5c-2 0-6 1-6 3V20h12v-1.5c0-2-4-3-6-3z"/>
             <circle cx="18" cy="8" r="2"/>
         </svg>
     </div>
     <span :class="(scrolled || !isHome || mobileMenuOpen) ? 'text-gray-900' : 'text-white'" class="text-lg md:text-3xl font-bold transition-colors duration-500 tracking-tight">
-        Lemans<span class="text-blue-600"> Jaya</span>
+        Lemans<span class="text-yellow-400"> Jaya</span>
     </span>
 </a>
 
         {{-- Desktop Menu --}}
         <ul class="hidden lg:flex items-center gap-10">
-            @php $links = ['Home' => 'home', 'Services' => 'services.index', 'Products' => 'products.index', 'Articles' => 'articles.index', 'Gallery' => 'gallery.index', 'Contact' => 'contact.index']; @endphp
+            @php $links = ['Home' => 'home', 'Services' => 'services.index', 'Products' => 'products.index', 'Gallery' => 'gallery.index', 'Contact' => 'contact.index']; @endphp
             @foreach($links as $name => $route)
                 <li>
                     <a href="{{ route($route) }}" 
-                       :class="(scrolled || !isHome) ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-white'"
+                       :class="(scrolled || !isHome) ? 'text-gray-700 hover:text-yellow-400' : 'text-white hover:text-white'"
                        class="font-semibold text-base transition-all duration-300 relative group py-2"
                     >
                         {{ $name }}
-                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-500 group-hover:w-full"></span>
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-400 transition-all duration-500 group-hover:w-full"></span>
                     </a>
                 </li>
             @endforeach
@@ -41,7 +41,7 @@
         {{-- Action Buttons --}}
         <div class="flex items-center gap-2 md:gap-4 relative z-[110]">
             <a href="{{ route('appointments.index') }}" 
-               class="hidden md:flex bg-blue-600 text-white px-8 py-3.5 rounded-2xl font-bold text-sm shadow-xl shadow-blue-500/20 hover:bg-blue-700 hover:-translate-y-1 transition-all duration-300">
+               class="hidden md:flex bg-yellow-400 text-white px-8 py-3.5 rounded-2xl font-bold text-sm shadow-xl shadow-yellow-500/20 hover:bg-yellow-400 hover:-translate-y-1 transition-all duration-300">
                 Book Visit
             </a>
             
@@ -68,12 +68,12 @@
     >
         <div class="p-6 space-y-2">
             @foreach($links as $name => $route)
-                <a href="{{ route($route) }}" class="block text-lg font-bold text-gray-900 hover:text-blue-600 transition-colors py-3 px-4 rounded-xl hover:bg-blue-50">
+                <a href="{{ route($route) }}" class="block text-lg font-bold text-gray-900 hover:text-yellow-400 transition-colors py-3 px-4 rounded-xl hover:bg-yellow-50">
                     {{ $name }}
                 </a>
             @endforeach
             <div class="pt-4 px-4 pb-6">
-                <a href="{{ route('appointments.index') }}" class="block w-full bg-blue-600 text-white text-center py-4 rounded-2xl font-extrabold shadow-xl shadow-blue-500/30">
+                <a href="{{ route('appointments.index') }}" class="block w-full bg-yellow-400 text-white text-center py-4 rounded-2xl font-extrabold shadow-xl shadow-yellow-500/30">
                     Book Appointment Now
                 </a>
             </div>

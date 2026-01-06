@@ -31,11 +31,11 @@
             </div>
             
             {{-- Enhanced button with glassmorphism and glow --}}
-            <a href="{{ route('services.index') }}" class="group flex items-center gap-3 text-gray-900 font-semibold text-sm hover:text-blue-600 transition-colors">
-                <span>View All Services</span>
-                <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center text-white group-hover:scale-110 transition-all duration-300 shadow-xl shadow-blue-500/40 group-hover:shadow-2xl group-hover:shadow-blue-500/50">
-                    <svg class="w-5 h-5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                </div>
+    
+            <a href="{{ route('services.index') }}" class="group relative bg-gradient-to-r from-gray-900 to-gray-800 text-white px-8 md:px-10 py-4 md:py-5 rounded-2xl font-bold flex items-center gap-4 hover:from-blue-600 hover:to-blue-600 transition-all duration-500 shadow-2xl shadow-gray-900/20 hover:shadow-blue-500/30 text-sm overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-400/0 via-white/10 to-blue-400/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
+                <span class="relative">View All Sservices</span>
+                <svg class="relative w-5 h-5 md:w-6 md:h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
         </div>
 

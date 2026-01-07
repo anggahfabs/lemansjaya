@@ -7,21 +7,21 @@
     x-data="{ showMobileFilters: false }"
 >
     {{-- Abstract Background Elements --}}
-    <div class="absolute top-40 right-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="absolute bottom-40 left-0 w-[400px] h-[400px] bg-blue-600/5 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-40 right-0 w-[500px] h-[500px] bg-yellow-400/5 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-40 left-0 w-[400px] h-[400px] bg-yellow-500/5 rounded-full blur-3xl pointer-events-none"></div>
     
     <div class="max-w-7xl mx-auto px-6 relative z-10">
         
         {{-- Header --}}
         <div class="mb-16 md:mb-20 text-center" data-aos="fade-down">
             <div class="flex items-center justify-center gap-3 mb-4">
-                <div class="w-8 h-0.5 bg-gradient-to-r from-transparent via-blue-500 to-transparent rounded-full"></div>
-                <span class="text-blue-600 font-semibold text-xs uppercase tracking-wider">Our Marketplace</span>
-                <div class="w-8 h-0.5 bg-gradient-to-r from-transparent via-blue-500 to-transparent rounded-full"></div>
+                <div class="w-8 h-0.5 bg-gradient-to-r from-transparent via-yellow-400 to-transparent rounded-full"></div>
+                <span class="text-yellow-500 font-semibold text-xs uppercase tracking-wider">Our Marketplace</span>
+                <div class="w-8 h-0.5 bg-gradient-to-r from-transparent via-yellow-400 to-transparent rounded-full"></div>
             </div>
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight">
                 Elite Pet
-                <span class="block text-blue-600 mt-1">Products</span>
+                <span class="block text-yellow-500 mt-1">Products</span>
             </h1>
             <p class="text-gray-600 text-lg mt-4 max-w-2xl mx-auto">Discover premium products for your beloved companions</p>
         </div>
@@ -50,8 +50,8 @@
                 <div class="relative bg-white w-full max-w-xs h-full overflow-y-auto p-6 md:p-10 shadow-2xl border-r border-gray-100 lg:rounded-3xl lg:border lg:sticky lg:top-32 lg:h-auto lg:shadow-lg">
                     <div class="flex items-center justify-between mb-8 lg:mb-6">
                         <h3 class="font-bold text-xl text-gray-900 flex items-center gap-3">
-                            <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center">
-                                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path></svg>
+                            <div class="w-10 h-10 bg-yellow-50 rounded-xl flex items-center justify-center">
+                                <svg class="w-5 h-5 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path></svg>
                             </div>
                             Shop Filters
                         </h3>
@@ -69,14 +69,14 @@
                             <div class="grid grid-cols-2 gap-3 mb-4">
                                 <div class="relative">
                                     <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-xs">Rp</span>
-                                    <input type="number" name="min_price" value="{{ request('min_price') }}" placeholder="Min" class="w-full bg-gray-50 border border-gray-200 pl-8 pr-3 py-3 rounded-xl text-xs focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                    <input type="number" name="min_price" value="{{ request('min_price') }}" placeholder="Min" class="w-full bg-gray-50 border border-gray-200 pl-8 pr-3 py-3 rounded-xl text-xs focus:ring-2 focus:ring-yellow-400 focus:border-transparent">
                                 </div>
                                 <div class="relative">
                                     <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-xs">Rp</span>
-                                    <input type="number" name="max_price" value="{{ request('max_price') }}" placeholder="Max" class="w-full bg-gray-50 border border-gray-200 pl-8 pr-3 py-3 rounded-xl text-xs focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                    <input type="number" name="max_price" value="{{ request('max_price') }}" placeholder="Max" class="w-full bg-gray-50 border border-gray-200 pl-8 pr-3 py-3 rounded-xl text-xs focus:ring-2 focus:ring-yellow-400 focus:border-transparent">
                                 </div>
                             </div>
-                            <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-3 rounded-xl hover:bg-blue-700 transition-all text-sm shadow-lg shadow-blue-500/30">Apply Filters</button>
+                            <button type="submit" class="w-full bg-yellow-500 text-white font-semibold py-3 rounded-xl hover:bg-yellow-700 transition-all text-sm shadow-lg shadow-yellow-400/30">Apply Filters</button>
                         </div>
 
                         {{-- CATEGORIES --}}
@@ -88,18 +88,18 @@
                             <div x-show="open" x-collapse class="space-y-3">
                                 <label class="group flex items-center gap-3 cursor-pointer">
                                     <input type="radio" name="category" value="" class="hidden peer" {{ request('category') == '' ? 'checked' : '' }} onchange="this.form.submit()">
-                                    <div class="w-5 h-5 border-2 border-gray-200 rounded-lg peer-checked:border-blue-600 peer-checked:bg-blue-600 transition-all flex items-center justify-center">
+                                    <div class="w-5 h-5 border-2 border-gray-200 rounded-lg peer-checked:border-yellow-500 peer-checked:bg-yellow-500 transition-all flex items-center justify-center">
                                         <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>
                                     </div>
-                                    <span class="text-gray-600 text-sm group-hover:text-blue-600 transition-colors">All Categories</span>
+                                    <span class="text-gray-600 text-sm group-hover:text-yellow-500 transition-colors">All Categories</span>
                                 </label>
                                 @foreach($categories as $category)
                                     <label class="group flex items-center gap-3 cursor-pointer">
                                         <input type="radio" name="category" value="{{ $category->id }}" class="hidden peer" {{ request('category') == $category->id ? 'checked' : '' }} onchange="this.form.submit()">
-                                        <div class="w-5 h-5 border-2 border-gray-200 rounded-lg peer-checked:border-blue-600 peer-checked:bg-blue-600 transition-all flex items-center justify-center">
+                                        <div class="w-5 h-5 border-2 border-gray-200 rounded-lg peer-checked:border-yellow-500 peer-checked:bg-yellow-500 transition-all flex items-center justify-center">
                                             <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>
                                         </div>
-                                        <span class="text-gray-600 text-sm group-hover:text-blue-600 transition-colors">{{ $category->name }}</span>
+                                        <span class="text-gray-600 text-sm group-hover:text-yellow-500 transition-colors">{{ $category->name }}</span>
                                     </label>
                                 @endforeach
                             </div>
@@ -114,18 +114,18 @@
                             <div x-show="open" x-collapse class="space-y-3">
                                 <label class="group flex items-center gap-3 cursor-pointer">
                                     <input type="radio" name="brand" value="" class="hidden peer" {{ request('brand') == '' ? 'checked' : '' }} onchange="this.form.submit()">
-                                    <div class="w-5 h-5 border-2 border-gray-200 rounded-lg peer-checked:border-blue-600 peer-checked:bg-blue-600 transition-all flex items-center justify-center">
+                                    <div class="w-5 h-5 border-2 border-gray-200 rounded-lg peer-checked:border-yellow-500 peer-checked:bg-yellow-500 transition-all flex items-center justify-center">
                                         <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>
                                     </div>
-                                    <span class="text-gray-600 text-sm group-hover:text-blue-600 transition-colors">All Brands</span>
+                                    <span class="text-gray-600 text-sm group-hover:text-yellow-500 transition-colors">All Brands</span>
                                 </label>
                                 @foreach($brands as $brand)
                                     <label class="group flex items-center gap-3 cursor-pointer">
                                         <input type="radio" name="brand" value="{{ $brand->id }}" class="hidden peer" {{ request('brand') == $brand->id ? 'checked' : '' }} onchange="this.form.submit()">
-                                        <div class="w-5 h-5 border-2 border-gray-200 rounded-lg peer-checked:border-blue-600 peer-checked:bg-blue-600 transition-all flex items-center justify-center">
+                                        <div class="w-5 h-5 border-2 border-gray-200 rounded-lg peer-checked:border-yellow-500 peer-checked:bg-yellow-500 transition-all flex items-center justify-center">
                                             <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg>
                                         </div>
-                                        <span class="text-gray-600 text-sm group-hover:text-blue-600 transition-colors">{{ $brand->name }}</span>
+                                        <span class="text-gray-600 text-sm group-hover:text-yellow-500 transition-colors">{{ $brand->name }}</span>
                                     </label>
                                 @endforeach
                             </div>
@@ -150,7 +150,7 @@
                         {{-- Mobile Filter Trigger --}}
                         <button 
                             @click="showMobileFilters = true"
-                            class="lg:hidden flex items-center justify-center gap-2 bg-blue-600 text-white px-5 py-2.5 rounded-xl shadow-lg shadow-blue-500/30 text-xs font-bold active:scale-95 transition-all"
+                            class="lg:hidden flex items-center justify-center gap-2 bg-yellow-500 text-white px-5 py-2.5 rounded-xl shadow-lg shadow-yellow-400/30 text-xs font-bold active:scale-95 transition-all"
                         >
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path></svg>
                             Filters
@@ -168,9 +168,9 @@
                             name="search" 
                             value="{{ request('search') }}" 
                             placeholder="Search products..." 
-                            class="pl-12 pr-4 py-3 md:py-4 bg-white border border-gray-200 rounded-2xl w-full md:w-[400px] shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-sm"
+                            class="pl-12 pr-4 py-3 md:py-4 bg-white border border-gray-200 rounded-2xl w-full md:w-[400px] shadow-sm focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition-all text-sm"
                         >
-                        <svg class="w-5 h-5 text-gray-400 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-blue-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-5 h-5 text-gray-400 absolute left-4 top-1/2 -translate-y-1/2 group-focus-within:text-yellow-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                         </svg>
                     </form>
@@ -185,7 +185,7 @@
                                 data-aos="fade-up" 
                                 data-aos-delay="{{ ($index % 3) * 100 }}"
                             >
-                                <div class="relative bg-white rounded-2xl md:rounded-3xl overflow-hidden aspect-[4/5] mb-4 md:mb-6 shadow-sm hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-500 border border-gray-100 italic">
+                                <div class="relative bg-white rounded-2xl md:rounded-3xl overflow-hidden aspect-[4/5] mb-4 md:mb-6 shadow-sm hover:shadow-xl hover:shadow-yellow-400/10 transition-all duration-500 border border-gray-100 italic">
                                     @if($product->image)
                                         <img src="{{ asset('storage/'.$product->image) }}" alt="{{ $product->name }}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
                                     @else
@@ -198,7 +198,7 @@
                                     
                                     <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                                         <div class="bg-white rounded-xl md:rounded-2xl p-3 md:p-4 transform scale-75 group-hover:scale-100 transition-transform duration-500 shadow-2xl">
-                                            <svg class="w-6 md:w-8 h-6 md:h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                            <svg class="w-6 md:w-8 h-6 md:h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                                         </div>
                                     </div>
 
@@ -209,15 +209,15 @@
                                             </span>
                                         @endif
                                         @if($product->brand)
-                                            <span class="bg-blue-600 px-2.5 md:px-4 py-1 md:py-1.5 rounded-full text-[8px] md:text-xs font-bold text-white shadow-sm">
+                                            <span class="bg-yellow-500 px-2.5 md:px-4 py-1 md:py-1.5 rounded-full text-[8px] md:text-xs font-bold text-white shadow-sm">
                                                 {{ $product->brand->name }}
                                             </span>
                                         @endif
                                     </div>
                                 </div>
                                 <div class="px-1 md:px-2">
-                                    <h3 class="text-sm md:text-xl font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors line-clamp-1 select-none">{{ $product->name }}</h3>
-                                    <p class="text-base md:text-2xl font-black text-blue-600">Rp {{ number_format($product->price, 0, ',', '.') }}</p>
+                                    <h3 class="text-sm md:text-xl font-bold text-gray-900 mb-1 group-hover:text-yellow-500 transition-colors line-clamp-1 select-none">{{ $product->name }}</h3>
+                                    <p class="text-base md:text-2xl font-black text-yellow-400">Rp {{ number_format($product->price, 0, ',', '.') }}</p>
                                 </div>
                             </div>
                         @endforeach
@@ -239,7 +239,7 @@
                                         <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"></path></svg>
                                     </div>
                                 @else
-                                    <a href="{{ $products->previousPageUrl() }}" class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white flex items-center justify-center text-gray-700 hover:bg-blue-600 hover:text-white hover:border-blue-600 border border-gray-200 shadow-lg shadow-gray-100 hover:shadow-blue-500/30 transition-all duration-300 group">
+                                    <a href="{{ $products->previousPageUrl() }}" class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white flex items-center justify-center text-gray-700 hover:bg-yellow-500 hover:text-white hover:border-yellow-500 border border-gray-200 shadow-lg shadow-gray-100 hover:shadow-yellow-400/30 transition-all duration-300 group">
                                         <svg class="w-5 h-5 md:w-6 md:h-6 group-active:scale-95" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"></path></svg>
                                     </a>
                                 @endif
@@ -254,11 +254,11 @@
 
                                     @for ($page = $start; $page <= $end; $page++)
                                         @if ($page == $products->currentPage())
-                                            <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-blue-600 flex items-center justify-center text-white font-black shadow-xl shadow-blue-500/40 border border-blue-600 select-none">
+                                            <div class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-yellow-500 flex items-center justify-center text-white font-black shadow-xl shadow-yellow-400/40 border border-yellow-500 select-none">
                                                 {{ $page }}
                                             </div>
                                         @else
-                                            <a href="{{ $products->url($page) }}" class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white flex items-center justify-center text-gray-600 font-bold hover:bg-blue-50 hover:text-blue-600 border border-gray-200 hover:border-blue-200 transition-all duration-300 select-none">
+                                            <a href="{{ $products->url($page) }}" class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white flex items-center justify-center text-gray-600 font-bold hover:bg-yellow-50 hover:text-yellow-500 border border-gray-200 hover:border-yellow-200 transition-all duration-300 select-none">
                                                 {{ $page }}
                                             </a>
                                         @endif
@@ -266,13 +266,13 @@
                                 </div>
 
                                 {{-- Compact Page Number for Mobile --}}
-                                <div class="sm:hidden flex items-center justify-center px-4 py-3 bg-blue-50 rounded-2xl border border-blue-100 text-blue-700 font-bold text-sm">
+                                <div class="sm:hidden flex items-center justify-center px-4 py-3 bg-yellow-50 rounded-2xl border border-yellow-100 text-yellow-700 font-bold text-sm">
                                     {{ $products->currentPage() }} / {{ $products->lastPage() }}
                                 </div>
 
                                 {{-- Next --}}
                                 @if ($products->hasMorePages())
-                                    <a href="{{ $products->nextPageUrl() }}" class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white flex items-center justify-center text-gray-700 hover:bg-blue-600 hover:text-white hover:border-blue-600 border border-gray-200 shadow-lg shadow-gray-100 hover:shadow-blue-500/30 transition-all duration-300 group">
+                                    <a href="{{ $products->nextPageUrl() }}" class="w-12 h-12 md:w-14 md:h-14 rounded-2xl bg-white flex items-center justify-center text-gray-700 hover:bg-yellow-500 hover:text-white hover:border-yellow-500 border border-gray-200 shadow-lg shadow-gray-100 hover:shadow-yellow-400/30 transition-all duration-300 group">
                                         <svg class="w-5 h-5 md:w-6 md:h-6 group-active:scale-95" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
                                     </a>
                                 @else
@@ -290,7 +290,7 @@
                         </div>
                         <h3 class="text-2xl font-bold text-gray-900 mb-4">No Products Found</h3>
                         <p class="text-gray-500 mb-8 text-base">We couldn't find any products matching your filters.</p>
-                        <a href="{{ route('products.index') }}" class="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition-all text-sm shadow-lg shadow-blue-500/30">
+                        <a href="{{ route('products.index') }}" class="inline-flex items-center gap-2 bg-yellow-500 text-white px-8 py-4 rounded-xl font-semibold hover:bg-yellow-700 transition-all text-sm shadow-lg shadow-yellow-400/30">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
                             Reset Filters
                         </a>

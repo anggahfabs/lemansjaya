@@ -1,19 +1,19 @@
 <section class="py-16 md:py-32 bg-gradient-to-b from-white via-gray-50/30 to-white relative overflow-hidden">
     {{-- Subtle background elements that blend with services and articles sections --}}
-    <div class="absolute -bottom-40 -left-40 w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-gradient-to-br from-blue-400/5 to-purple-400/5 rounded-full blur-[120px]"></div>
-    <div class="absolute -top-40 -right-40 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-gradient-to-br from-pink-400/5 to-blue-400/5 rounded-full blur-[100px]"></div>
+    <div class="absolute -bottom-40 -left-40 w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-gradient-to-br from-yellow-400/5 to-purple-400/5 rounded-full blur-[120px]"></div>
+    <div class="absolute -top-40 -right-40 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-gradient-to-br from-pink-400/5 to-yellow-400/5 rounded-full blur-[100px]"></div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 md:mb-24 gap-8" data-aos="fade-up">
             <div class="max-w-2xl">
                 {{-- Badge with glow effect --}}
-                <span class="inline-block bg-gradient-to-r from-blue-500/10 to-purple-500/10 text-blue-600 font-bold uppercase mb-4 text-[10px] md:text-sm px-4 py-2 rounded-full border border-blue-500/20 shadow-lg shadow-blue-500/10">Our Marketplace</span>
+                <span class="inline-block bg-gradient-to-r from-yellow-500/10 to-purple-500/10 text-yellow-400 font-bold uppercase mb-4 text-[10px] md:text-sm px-4 py-2 rounded-full border border-yellow-500/20 shadow-lg shadow-yellow-500/10">Our Marketplace</span>
                 {{-- Title with gradient text --}}
-                <h1 class="text-3xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent leading-tight px-2 md:px-0">Treat Your Pet With <span class="bg-gradient-to-r from-blue-600 to-blue-600 bg-clip-text text-transparent">Quality</span></h1>
+                <h1 class="text-3xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent leading-tight px-2 md:px-0">Treat Your Pet With <span class="bg-gradient-to-r from-yellow-500 to-yellow-400 bg-clip-text text-transparent">Quality</span></h1>
             </div>
             {{-- Enhanced button with glassmorphism --}}
-            <a href="{{ route('products.index') }}" class="group relative bg-gradient-to-r from-gray-900 to-gray-800 text-white px-8 md:px-10 py-4 md:py-5 rounded-2xl font-bold flex items-center gap-4 hover:from-blue-600 hover:to-blue-600 transition-all duration-500 shadow-2xl shadow-gray-900/20 hover:shadow-blue-500/30 text-sm overflow-hidden">
-                <div class="absolute inset-0 bg-gradient-to-r from-blue-400/0 via-white/10 to-blue-400/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
+            <a href="{{ route('products.index') }}" class="group relative bg-gradient-to-r from-gray-900 to-gray-800 text-white px-8 md:px-10 py-4 md:py-5 rounded-2xl font-bold flex items-center gap-4 hover:from-yellow-500 hover:to-yellow-400 transition-all duration-500 shadow-2xl shadow-gray-900/20 hover:shadow-yellow-500/30 text-sm overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-r from-yellow-400/0 via-white/10 to-yellow-400/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
                 <span class="relative">Explore Full Shop</span>
                 <svg class="relative w-5 h-5 md:w-6 md:h-6 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -28,7 +28,7 @@
                 data-aos="fade-up"
                 data-aos-delay="{{ $index * 150 }}">
                 {{-- Enhanced card with backdrop blur and better shadows --}}
-                <div class="relative rounded-3xl md:rounded-[4rem] overflow-hidden bg-white/80 backdrop-blur-sm shadow-xl shadow-gray-200/70 aspect-[4/5] mb-5 md:mb-8 border border-gray-100/50 transition-all duration-700 group-hover:shadow-blue-300/50 group-hover:shadow-2xl group-hover:scale-[1.02]">
+                <div class="relative rounded-3xl md:rounded-[4rem] overflow-hidden bg-white/80 backdrop-blur-sm shadow-xl shadow-gray-200/70 aspect-[4/5] mb-5 md:mb-8 border border-gray-100/50 transition-all duration-700 group-hover:shadow-yellow-300/50 group-hover:shadow-2xl group-hover:scale-[1.02]">
                     @if($product->image)
                     <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
                     @else
@@ -59,10 +59,10 @@
                     @endif
                 </div>
                 <div class="px-2 md:px-6">
-                    <h3 class="text-base md:text-2xl font-extrabold text-gray-900 mb-1 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-blue-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 line-clamp-1">{{ $product->name }}</h3>
+                    <h3 class="text-base md:text-2xl font-extrabold text-gray-900 mb-1 group-hover:bg-gradient-to-r group-hover:from-yellow-400 group-hover:to-yellow-500 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300 line-clamp-1">{{ $product->name }}</h3>
                     <div class="flex items-center justify-between">
                         {{-- Enhanced price with gradient on hover --}}
-                        <span class="text-sm md:text-2xl font-bold text-gray-500 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-blue-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">Rp {{ number_format($product->price, 0, ',', '.') }}</span>
+                        <span class="text-sm md:text-2xl font-bold text-gray-500 group-hover:bg-gradient-to-r group-hover:from-yellow-400 group-hover:to-yellow-500 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">Rp {{ number_format($product->price, 0, ',', '.') }}</span>
                     </div>
                 </div>
             </div>

@@ -6,9 +6,9 @@
     <div class="max-w-7xl mx-auto px-6">
         
         <div class="text-center mb-12 md:mb-20" data-aos="fade-down">
-            <h2 class="text-blue-600 font-bold uppercase mb-4 text-[10px] md:text-sm tracking-widest">Visual Journey</h2>
+            <h2 class="text-yellow-400 font-bold uppercase mb-4 text-[10px] md:text-sm tracking-widest">Visual Journey</h2>
             <h1 class="text-3xl md:text-6xl font-bold text-gray-900 mb-6 md:mb-8 leading-tight">Our Photo Gallery</h1>
-            <div class="w-24 md:w-48 h-1.5 md:h-2.5 bg-blue-600 mx-auto rounded-full"></div>
+            <div class="w-24 md:w-48 h-1.5 md:h-2.5 bg-yellow-400 mx-auto rounded-full"></div>
         </div>
 
         @if($galleries->count())
@@ -20,7 +20,7 @@
                         data-aos-delay="{{ $index * 50 }}"
                     >
                         <img src="{{ asset('storage/' . $item->image) }}" class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-blue-600/90 via-blue-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-6 md:p-10">
+                        <div class="absolute inset-0 bg-gradient-to-t from-yellow-400/90 via-yellow-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-6 md:p-10">
                             <div class="transform translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
                                 <span class="text-white/70 font-bold text-[10px] md:text-xs mb-2 md:mb-4 block">Capturing Moments</span>
                                 <h3 class="text-white text-base md:text-2xl font-bold leading-tight">{{ $item->title }}</h3>

@@ -116,7 +116,7 @@
 
         <!-- Footer -->
         <p class="text-center text-slate-600 text-sm mt-6">
-            Petshop Admin Panel &copy; 2026
+            Lemans Jaya Admin Panel &copy; 2026
         </p>
     </div>
 </div>

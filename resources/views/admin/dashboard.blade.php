@@ -5,7 +5,7 @@
 @section('content')
 <div class="mb-8">
     <h1 class="text-3xl font-bold text-gray-800">Dashboard</h1>
-    <p class="text-gray-600">Overview of your Petshop operations.</p>
+    <p class="text-gray-600">Overview of your Lemans Jaya operations.</p>
 </div>
 
 {{-- Stats Grid --}}
@@ -161,7 +161,7 @@
     {{-- Shortcuts / Quick Actions --}}
     <div class="space-y-6">
         <div class="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-8 text-white shadow-lg shadow-blue-200">
-            <h3 class="text-xl font-bold mb-2">Petshop Management</h3>
+            <h3 class="text-xl font-bold mb-2">Lemans Jaya Management</h3>
             <p class="text-blue-100 mb-6 text-sm">Update your services, products, and articles to keep your customers engaged.</p>
             <div class="grid grid-cols-2 gap-4">
                 <a href="{{ route('admin.products.index') }}" class="bg-white/10 hover:bg-white/20 backdrop-blur-md p-4 rounded-xl transition-all border border-white/10 flex flex-col gap-2">

@@ -21,7 +21,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                     </svg>
                 </div>
-                <h1 class="text-4xl md:text-7xl font-bold text-white mb-4 md:mb-6">Welcome to OVI Petshop</h1>
+                <h1 class="text-4xl md:text-7xl font-bold text-white mb-4 md:mb-6">Welcome to Lemans Jaya</h1>
                 <p class="text-base md:text-xl text-slate-400 max-w-xs md:max-w-md mx-auto">Please add heroes in admin panel to see the slider.</p>
             </div>
         </div>
@@ -124,6 +124,7 @@
     @endforeach
 
     {{-- Enhanced bottom bar with modern glassmorphism --}}
+    
     <div class="absolute bottom-8 md:bottom-12 lg:bottom-16 left-0 right-0 z-20 px-6 md:px-12 lg:px-16">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             {{-- Indicators --}}

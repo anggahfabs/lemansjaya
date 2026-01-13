@@ -22,7 +22,9 @@
                         <img src="{{ asset('storage/' . $item->image) }}" class="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-110">
                         <div class="absolute inset-0 bg-gradient-to-t from-yellow-400/90 via-yellow-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-6 md:p-10">
                             <div class="transform translate-y-10 group-hover:translate-y-0 transition-transform duration-500">
-                                <span class="text-white/70 font-bold text-[10px] md:text-xs mb-2 md:mb-4 block">Capturing Moments</span>
+                                <span class="text-white font-bold text-[10px] md:text-xs mb-2 md:mb-4 block uppercase">
+                                    {{ $item->caption }}
+                                </span>
                                 <h3 class="text-white text-base md:text-2xl font-bold leading-tight">{{ $item->title }}</h3>
                             </div>
                         </div>
